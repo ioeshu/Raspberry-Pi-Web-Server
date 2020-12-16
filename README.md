@@ -10,9 +10,10 @@
 After your personal web server is complete, you can use it to host a custom HTML or PHP resume, or a wordpress site on your Raspberry pi
 
 - [Description](#description)
-- [How To Use](#how-to-use)
-- [References](#references)
-- [License](#license)
+- [How To setup ](How-To-setup )
+- [Run Wordpress on Raspberry pi ](#Run-Wordpress-on-Raspberry-pi)
+- [Run PHP or Html script on Raspberry pi](#Run-PHP-or-Html-script-on-Raspberry-pi)
+
 - [Author Info](#author-info)
 
 ---
@@ -29,7 +30,7 @@ You can use google cloud or Amazon Aws to host your script but if you like build
 ---
 
 ## How To setup 
-
+## Run Wordpress on Raspberry pi
 ### Installation
 
 - Install Apache
@@ -40,7 +41,7 @@ You can use google cloud or Amazon Aws to host your script but if you like build
 - Install PHP
 
 ```html
-    sudo apt-get install php -y
+    sudo apt install php libapache2-mod-php -y
 ```
 - Install MariaDB
 
@@ -110,24 +111,46 @@ Table Prefix:       wp_
 #### Click Submit to proceed.
 #### Click the Run the install button.
 
+## Run PHP or Html script on Raspberry pi
+
+- Install Apache
+
+```html
+    sudo apt-get install apache2 -y
+```
+- Install PHP
+
+```html
+    sudo apt install php libapache2-mod-php -y
+```
+Test the web server
+```html
+http://localhost/ or http://Enter your ip address
+```
+
+you will see a default web page is just an HTML file on the filesystem. It is located at
+`/var/www/html/index.html`
+
+Navigate to this directory, remove the file and create a new php file
+
+```html 
+cd /var/www/html
+sudo rm index.html
+sudo nano index.php
+```
+
+paste and click `Ctrl+ O` 
+```html
+<?php echo "hello world"; ?>
+```
+
 
 ---
-## References
 
----
-
-## License
-
-MIT License
-
-
-
-
----
 
 ## Author Info
 
 - Twitter - [@Eswar](https://twitter.com/IAm_Eswar)
 - Website - [TechNuws](https://technuws.com)
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#Turn-Raspberry-Pi-Into-Web-Server)
