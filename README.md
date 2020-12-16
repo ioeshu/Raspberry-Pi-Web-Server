@@ -10,7 +10,7 @@
 After your personal web server is complete, you can use it to host a custom HTML or PHP resume, or a wordpress site on your Raspberry pi
 
 - [Description](#description)
-- [How To setup ](How-To-setup )
+- [How To ](How-To )
 - [Run Wordpress on Raspberry pi ](#Run-Wordpress-on-Raspberry-pi)
 - [Run PHP or Html script on Raspberry pi](#Run-PHP-or-Html-script-on-Raspberry-pi)
 
@@ -26,13 +26,11 @@ You can use google cloud or Amazon Aws to host your script but if you like build
 
 - Run Wordpress on Raspberry pi 
 - Run PHP or Html script on Raspberry pi
-
 ---
 
-## How To setup 
+## How To 
 ## Run Wordpress on Raspberry pi
 ### Installation
-
 - Install Apache
 
 ```html
